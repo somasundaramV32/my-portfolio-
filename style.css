@@ -447,12 +447,6 @@ input, textarea {
     background: #f9f9f9;
 }
 
-/* input:focus, textarea:focus {
-    border-color: #007bff;
-    outline: none;
-    background: #fff;
-} */
-
 .btn{
     background-color: #149197;
     color: white;
@@ -491,114 +485,100 @@ footer p {
     }
 } 
 @media screen and (min-width: 375px) and (max-width: 700px) {
+    body {
+        font-size: 14px;
+    }
+
+    .navbar {
+        box-shadow: none;
+    }
+
+    .navbar-brand, .nav-link {
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 80px 10px;
+    }
+
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .hero p {
         font-size: 1rem;
     }
 
+    .hero img {
+        width: 100px;
+        height: 100px;
+    }
+
     .social-icons a {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+        margin: 0 10px;
     }
 
-    .social-icons a:hover {
-        transform: scale(1.1);
-    }
-        .project-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            margin: 20px 10px;
-        }
-    
-        .project-link {
-            position: relative;
-            display: inline-block;
-            overflow: hidden;
-        }
-    
-        .project-img {
-            width: 100%; 
-            height: auto;
-            filter: blur(0.3rem); 
-            transition: transform 0.3s ease, filter 0.3s ease;
-        }
-    
-        .project-link:hover .project-img {
-            transform: scale(1.05); 
-            filter: blur(0); 
-            box-shadow: 1rem 1rem 0.1rem #e92929, 
-                        2rem 2rem 0.1rem #a2e946,
-                        3rem 3rem 0.1rem #297ce9,
-                        4rem 4rem 0.1rem #00fffb;
-            opacity: 0.9;
-        }
-    
-        .project-title {
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin: 10px 0;
-            color: #ffffff;
-            top: 20pxpx;
-        }
-    
-        
-        .project-describ {
-            font-size: 1rem;
-            color: #555;
-            line-height: 1.4;
-            margin-bottom: 10px;
-           
-        }
-        
-        .social-icons a {
-            font-size: 1.5rem;
-            transition: transform 0.3s ease;
-        }
-    
-        .social-icons a:hover {
-            transform: scale(1.1);
-        }
-    
-        .btn, .download {
-            font-size: 13px !important;
-            padding: 8px 10px;
-            transition: background-color 0.3s, transform 0.3s;
-        }
-    
-        .btn:hover, .download:hover {
-            background-color: #00fffb;
-            transform: scale(1.05);
-        }
-    
-
-        .section-title {
-            font-size: 2rem;
-            margin-bottom: 15px;
-            text-align: center;
-        }
-    
-        .about-text, .contact-text {
-            font-size: 1rem;
-            padding: 0 15px;
-        }
-
-    .btn, .download {
-        font-size: 13px !important;
-        padding: 8px 10px;
+    .download {
+        font-size: 12px !important;
+        padding: 10px 15px;
     }
 
-    .btn:hover, .download:hover {
-        background-color: #00fffb;
-        transform: scale(1.05);
+    .section-title, .section-skills, .section-experience, .section-project, .section-contact {
+        font-size: 1.8rem;
     }
 
-    footer p {
-        font-size: 0.9rem;
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-link {
+        margin: 2rem 0;
+    }
+
+    .project-img {
+        width: 80vw;
+        height: 50vw;
+        box-shadow: 0.2rem 0.2rem 0.1rem #e92929, 
+        0.4rem 0.4rem 0.1rem #a2e946, 
+        0.6rem 0.6rem 0.1rem #297ce9,
+        0.8rem 0.8rem 0.1rem #00fffb;
+    }
+
+    .project-title {
+        font-size: 16px;
+    }
+
+    .project-describ {
+        font-size: 14px;
+    }
+
+    .contact-section {
+        padding: 40px 10px;
+    }
+
+    .contact-text {
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+
+    .form-group label {
+        font-size: 14px;
+    }
+
+    input, textarea {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 14px !important;
+        padding: 10px 15px;
     }
 }
+
 
 
