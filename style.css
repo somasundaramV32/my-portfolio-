@@ -549,9 +549,9 @@ footer p {
 
     .section-project {
         display: flex;
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center align for uniformity */
-        gap: calc(10px + (15 - 10) * ((100vw - 375px) / (700 - 375))); /* Adjust spacing between items */
+        flex-direction: column;
+        align-items: center; 
+        gap: calc(10px + (15 - 10) * ((100vw - 375px) / (700 - 375))); 
     }
 
     .project-link {
