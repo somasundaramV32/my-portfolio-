@@ -506,8 +506,8 @@ footer p {
         padding: 10px;
     }
 
-    .navbar-brand {
-        font-size: 18px;
+     .navbar-brand {
+        font-size: 18px; 
     }
     .navbar-nav {
         display: flex;
