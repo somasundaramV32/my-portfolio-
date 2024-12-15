@@ -499,7 +499,7 @@ footer p {
     }
 
     .navbar-brand, .nav-link {
-        font-size: calc(12px + (14 - 12) * ((100vw - 375px) / (700 - 375)));
+        font-size: calc(12px + (14 - 12) * ((100vw - 375px) / (700 - 375))); 
         transition: all 0.3s ease-in-out;
     }
 
