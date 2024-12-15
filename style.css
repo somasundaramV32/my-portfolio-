@@ -257,6 +257,7 @@ body {
     color: #00fffb;
     margin-bottom: 20px;
     position: relative;
+    flex-direction: column;
 }
 .section-project::after {
     content: '';
@@ -287,6 +288,8 @@ body {
     color: #00fffb;
     margin-bottom: 20px;
     position: relative;
+   
+    
 } 
 .gallery{
     display: flex;
@@ -484,101 +487,142 @@ footer p {
         opacity: 1;
     }
 } 
-@media screen and (min-width: 320px) and (max-width: 700px) {
+@media screen and (min-width: 375px) and (max-width: 700px) {
     body {
-        font-size: calc(12px + (14 - 12) * ((100vw - 320px) / (700 - 320)));
+        font-size: calc(12px + (14 - 12) * ((100vw - 375px) / (700 - 375)));
+        transition: all 0.3s ease-in-out;
     }
 
     .navbar {
         box-shadow: none;
+        transition: all 0.3s ease-in-out;
     }
 
     .navbar-brand, .nav-link {
-        font-size: calc(12px + (14 - 12) * ((100vw - 320px) / (700 - 320)));
+        font-size: calc(12px + (14 - 12) * ((100vw - 375px) / (700 - 375)));
+        transition: all 0.3s ease-in-out;
     }
 
     .hero {
-        padding: calc(60px + (80 - 60) * ((100vw - 320px) / (700 - 320))) 10px;
+        padding: calc(60px + (80 - 60) * ((100vw - 375px) / (700 - 375))) 10px;
     }
 
     .hero h1 {
-        font-size: calc(1.8rem + (2 - 1.8) * ((100vw - 320px) / (700 - 320)));
+        font-size: calc(1.8rem + (2 - 1.8) * ((100vw - 375px) / (700 - 375)));
+        transition: all 0.3s ease-in-out;
     }
 
     .hero p {
-        font-size: calc(0.9rem + (1 - 0.9) * ((100vw - 320px) / (700 - 320)));
+        font-size: calc(0.9rem + (1 - 0.9) * ((100vw - 375px) / (700 - 375)));
+        transition: all 0.3s ease-in-out;
     }
 
     .hero img {
-        width: calc(80px + (100 - 80) * ((100vw - 320px) / (700 - 320)));
-        height: calc(80px + (100 - 80) * ((100vw - 320px) / (700 - 320)));
+        width: calc(80px + (100 - 80) * ((100vw - 375px) / (700 - 375)));
+        height: calc(80px + (100 - 80) * ((100vw - 375px) / (700 - 375)));
+        transition: all 0.3s ease-in-out;
     }
 
     .social-icons a {
-        font-size: calc(1rem + (1.2 - 1) * ((100vw - 320px) / (700 - 320)));
-        margin: 0 calc(8px + (10 - 8) * ((100vw - 320px) / (700 - 320)));
+        font-size: calc(1rem + (1.2 - 1) * ((100vw - 375px) / (700 - 375)));
+        margin: 0 calc(8px + (10 - 8) * ((100vw - 375px) / (700 - 375)));
+        transition: all 0.3s ease-in-out;
     }
 
     .download {
-        font-size: calc(10px + (12 - 10) * ((100vw - 320px) / (700 - 320))) !important;
-        padding: calc(8px + (10 - 8) * ((100vw - 320px) / (700 - 320))) calc(10px + (15 - 10) * ((100vw - 320px) / (700 - 320)));
+        font-size: calc(10px + (12 - 10) * ((100vw - 375px) / (700 - 375))) !important;
+        padding: calc(8px + (10 - 8) * ((100vw - 375px) / (700 - 375))) calc(10px + (15 - 10) * ((100vw - 375px) / (700 - 375)));
+        transition: all 0.3s ease-in-out;
     }
 
-    .section-title, .section-skills, .section-experience, .section-project, .section-contact {
-        font-size: calc(1.5rem + (1.8 - 1.5) * ((100vw - 320px) / (700 - 320)));
+    .download:hover {
+        background-color: #f39c12;
+        color: #fff;
     }
 
-    .gallery {
-        flex-direction: column;
-        align-items: center;
+    .section-title {
+        font-size: calc(1.5rem + (1.8 - 1.5) * ((100vw - 375px) / (700 - 375)));
+        text-align: center;
+        margin-bottom: 20px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .section-project {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align for uniformity */
+        gap: calc(10px + (15 - 10) * ((100vw - 375px) / (700 - 375))); /* Adjust spacing between items */
     }
 
     .project-link {
-        margin: calc(1.5rem + (2 - 1.5) * ((100vw - 320px) / (700 - 320))) 0;
+        margin: calc(1.5rem + (2 - 1.5) * ((100vw - 375px) / (700 - 375))) 0;
+        text-align: center;
     }
 
     .project-img {
-        width: calc(90vw + (80 - 90) * ((100vw - 320px) / (700 - 320)));
-        height: calc(55vw + (50 - 55) * ((100vw - 320px) / (700 - 320)));
+        width: calc(90vw + (80 - 90) * ((100vw - 375px) / (700 - 375)));
+        height: calc(55vw + (50 - 55) * ((100vw - 375px) / (700 - 375)));
         box-shadow: 0.1rem 0.1rem 0.1rem #e92929, 
         0.3rem 0.3rem 0.1rem #a2e946, 
         0.5rem 0.5rem 0.1rem #297ce9,
         0.7rem 0.7rem 0.1rem #00fffb;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .project-img:hover {
+        transform: scale(1.05);
     }
 
     .project-title {
-        font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (700 - 320)));
+        font-size: calc(14px + (16 - 14) * ((100vw - 375px) / (700 - 375)));
+        text-align: center;
+        transition: all 0.3s ease-in-out;
     }
 
     .project-describ {
-        font-size: calc(12px + (14 - 12) * ((100vw - 320px) / (700 - 320)));
+        font-size: calc(12px + (14 - 12) * ((100vw - 375px) / (700 - 375)));
+        text-align: center;
+        transition: all 0.3s ease-in-out;
     }
 
     .contact-section {
-        padding: calc(30px + (40 - 30) * ((100vw - 320px) / (700 - 320))) 10px;
+        padding: calc(30px + (40 - 30) * ((100vw - 375px) / (700 - 375))) 10px;
     }
 
     .contact-text {
-        font-size: calc(0.9rem + (1 - 0.9) * ((100vw - 320px) / (700 - 320)));
+        font-size: calc(0.9rem + (1 - 0.9) * ((100vw - 375px) / (700 - 375)));
+        transition: all 0.3s ease-in-out;
     }
 
     footer {
-        font-size: calc(10px + (12 - 10) * ((100vw - 320px) / (700 - 320)));
+        font-size: calc(10px + (12 - 10) * ((100vw - 375px) / (700 - 375)));
+        transition: all 0.3s ease-in-out;
     }
 
     .form-group label {
-        font-size: calc(12px + (14 - 12) * ((100vw - 320px) / (700 - 320)));
+        font-size: calc(12px + (14 - 12) * ((100vw - 375px) / (700 - 375)));
+        transition: all 0.3s ease-in-out;
     }
 
     input, textarea {
-        font-size: calc(12px + (14 - 12) * ((100vw - 320px) / (700 - 320)));
+        font-size: calc(12px + (14 - 12) * ((100vw - 375px) / (700 - 375)));
+        transition: all 0.3s ease-in-out;
     }
 
     .btn {
-        font-size: calc(12px + (14 - 12) * ((100vw - 320px) / (700 - 320))) !important;
-        padding: calc(8px + (10 - 8) * ((100vw - 320px) / (700 - 320))) calc(10px + (15 - 10) * ((100vw - 320px) / (700 - 320)));
+        font-size: calc(12px + (14 - 12) * ((100vw - 375px) / (700 - 375))) !important;
+        padding: calc(8px + (10 - 8) * ((100vw - 375px) / (700 - 375))) calc(10px + (15 - 10) * ((100vw - 375px) / (700 - 375)));
+        transition: all 0.3s ease-in-out;
+    }
+
+    .btn:hover {
+        background-color: #f39c12;
+        color: #fff;
     }
 }
+
+
+
 
 
 
