@@ -564,21 +564,81 @@ footer p {
         line-height: 1.5;
     }
 
-    .projects-section .col-md-4 {
-        flex: 0 0 100%;
-        max-width: 100%;
-        margin-bottom: 20px;
+    .gallery {
+        flex-direction: column;
+        margin-top: 2rem;
     }
+
+    .project-link {
+        margin: 2rem 0.5rem;
+    }
+
     .project-img {
-        width: 100%;
+        width: 90%;
         height: auto;
+        box-shadow: 0.2rem 0.2rem 0.1rem #e92929, 
+                    0.3rem 0.3rem 0.1rem #a2e946, 
+                    0.5rem 0.5rem 0.1rem #297ce9, 
+                    0.7rem 0.7rem 0.1rem #00fffb;
+        transition: all 0.5s ease;
     }
-    .project-link h3 {
-        font-size: 18px;
-        margin-top: 10px;
+
+    .project-title {
+        font-size: 16px;
+        top: 15px;
+        left: 1rem;
+        transition: width 1s ease;
     }
-    .project-link p {
-        font-size: 14px;
+
+    .project-describ {
+        font-size: 12px;
+        bottom: 1rem;
+        left: 0.5rem;
+    }
+
+    .project-link::before {
+        top: 5vw;
+        left: 75%;
+        width: 0.1rem;
+        height: 0;
+        transition: height 0.4s ease;
+    }
+
+    .project-link::after {
+        top: 25%;
+        left: 0.5rem;
+        width: 0;
+        height: 0.1rem;
+        transition: width 0.4s ease;
+    }
+
+    .project-link:hover::before {
+        height: 70%;
+    }
+
+    .project-link:hover::after {
+        width: 85%;
+    }
+
+    .project-link:hover .project-title {
+        width: 90%;
+        transition: width 1s 0.3s;
+    }
+
+    .project-link:hover .project-describ {
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 0.8s ease;
+    }
+
+    .project-link:hover .project-img {
+        box-shadow: 0.5rem 0.5rem 0.1rem #e92929, 
+                    1rem 1rem 0.1rem #a2e946,
+                    1.5rem 1.5rem 0.1rem #297ce9,
+                    2rem 2rem 0.1rem #00fffb;
+        filter: blur(0.3rem);
+        opacity: 0.6;
+        transform: scale(1.03);
     }
 
     .contact-section form .form-control {
