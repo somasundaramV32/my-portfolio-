@@ -5,12 +5,6 @@ body {
     color: #ffcc00;
     overflow-x: hidden;
 }
-.navbar {
-    background-color: #070707; 
-    box-shadow: 0 4px 10px rgba(52, 240, 227, 0.8);
-    
-} 
-
 .navbar-brand, .nav-link {
     color: #00fffb !important;
     transition: color 0.3s;
@@ -20,7 +14,6 @@ body {
     color: #00fffb !important;
 }
 .navbar-nav, .nav-link:hover {
-    transform: 100ms;
     transition: ease-in-out;
     box-shadow: 0 4px 10px rgba(52, 240, 227, 0.8);   
 }
