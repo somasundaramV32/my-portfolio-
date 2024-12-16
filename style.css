@@ -400,8 +400,25 @@ body {
     height: 3px;
     background: gray;
     margin: 10px auto 0;
-    box-shadow: 0 4px 10px rgba(52, 240, 227, 0.8);
+    box-shadow: 0 4px 10px rgba(52, 240, 227, 0.8); 
 }
+#contact {
+    background: url('7021905_Cyber_Data_3840x2160.mp4') center/cover no-repeat;
+    padding: 120px 0;
+    text-align: center;
+    position: relative;
+    animation: fadeIn 2s ease-in-out;
+}
+.contact-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
 .contact-section{
     padding: 60 px 0;
     color: #cecdc9;
@@ -414,29 +431,22 @@ body {
     line-height: 1.8;
     text-align: center;
     padding: 0 15px;
-}
-
-.background-container {
-    height: 100vh;
-    width: 100vw;
-    background: url('./glowing-contact-us-logo-qx58564q7a51etk6.jpg') no-repeat center center/cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .contact-container {
-    width: 100%;
+}  
+.contact-container {
+    width: 300%;
     max-width: 400px;
     padding: 20px;
     backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.2);
-    border-radius: 15px;
+    border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
     transition: transform 0.3s;
+    opacity: 0.8;
+    position: relative;
+    top: 50%;
+    right: 30%;
   }
-  
   .contact-container:hover {
     transform: scale(1.05);
   }
@@ -679,23 +689,82 @@ footer p {
         opacity: 0.6;
         transform: scale(1.03);
     }
+    
+    #contact {
+        padding: 80px 0;
+        text-align: center;
+    }
 
-    .contact-section form .form-control {
-        font-size: 14px;
+    .contact-video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+      .contact-section {
+        padding: 40px 10px; 
+      }
+    
+      .contact-text {
+        font-size: 1rem; 
+        line-height: 1.6; 
+        padding: 0 10px; 
+      }
+    
+      .contact-container {
+        width: 90%; 
+        max-width: 320px; 
+        padding: 15px; 
+        top: auto;
+        right: auto; 
+        left: 50%; 
+        transform: translateX(-50%); 
+        position: relative; 
+        backdrop-filter: blur(5px); 
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+        opacity: 1; 
+      }
+    
+      .contact-container:hover {
+        transform: translateX(-50%) scale(1.02); 
+      }
+    
+      h2 {
+        font-size: 1.5rem; 
+        margin-bottom: 15px; 
+      }
+    
+      label {
+        font-size: 0.9rem; 
+      }
+    
+      input, textarea {
+        padding: 8px; 
+        font-size: 1rem; 
+      }
+    
+      input:focus, textarea:focus {
+        box-shadow: 0 0 5px #00fffb !important; 
+      }
+    
+      .btn-success {
+        font-size: 14px; 
         padding: 8px;
-    }
-    .contact-section form button {
-        font-size: 14px;
-        padding: 10px 20px;
-    }
-
+        margin-top: 8px; 
+        width: 90%; 
+        box-shadow: 0 2px 5px rgba(52, 240, 227, 0.6); 
+      }
+    
+      .btn-success:hover {
+        background: #00cfc7; 
+      }
     footer p {
         font-size: 12px;
     }
 
     .social-icons a:hover {
         color: #fff
-        transforms: scale(1.1);
+               transforms scale(1.1);
     }
     .btn:hover {
         background-color: #149197;
