@@ -5,8 +5,6 @@ body {
     color: #ffcc00;
     overflow-x: hidden;
 }
-
-
 .navbar {
     background-color: #070707; 
     box-shadow: 0 4px 10px rgba(52, 240, 227, 0.8);
@@ -98,8 +96,7 @@ body {
 .social-icons a:hover {
     color: #fff;
     transform: scale(1.2);
-    transition:ease-in-out
-    
+    transition:ease-in-out   
 }
 .download{
     background-color: #149197;
@@ -289,9 +286,7 @@ body {
     font-size: 2.5rem;
     color: #00fffb;
     margin-bottom: 20px;
-    position: relative;
-   
-    
+    position: relative;   
 } 
 .gallery{
     display: flex;
@@ -347,8 +342,7 @@ body {
     width: 0%;
     height: 0.2rem;
     background-color: #00fffb;
-    transition: width 0.5s;
-    
+    transition: width 0.5s;  
 }
 .project-img{
     width :24vw;
@@ -384,7 +378,6 @@ body {
     opacity: 0.5;
     transform: scale(1);
 }
-
 .section-contact {
     text-align: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -418,7 +411,6 @@ body {
     object-fit: cover;
     z-index: -1;
 }
-
 .contact-section{
     padding: 60 px 0;
     color: #cecdc9;
@@ -450,24 +442,19 @@ body {
   .contact-container:hover {
     transform: scale(1.05);
   }
-  
   h2 {
     color: #fff;
     margin-bottom: 20px;
   }
-  
   label {
     color: #00fffb;
   }
-  
   input, textarea {
     transition: box-shadow 0.3s;
   }
-  
   input:focus, textarea:focus {
     box-shadow: 0 0 10px #1a1a1a !important;
   }
-  
   .btn-success {
     width: 100%;
     justify-content: center;
@@ -483,18 +470,15 @@ body {
     display: inline-flex;
     box-shadow: 0 4px 10px rgba(52, 240, 227, 0.8)
   }
-  
   .btn-success:hover {
     background: #00fffb;
   }
-  
 footer {
     
     color: #cecdc9;
     text-align: center;
 
 }
-
 footer p {
     width: auto;
     margin: 0;
@@ -512,11 +496,9 @@ footer p {
 } 
 
 @media screen and (min-width: 375px) and (max-width: 700px) {
-
     body {
         padding: 10px;
     }
-
      .navbar-brand {
         font-size: 18px; 
     }
@@ -529,27 +511,22 @@ footer p {
     .navbar-toggler {
         margin: 5px 0;
     }
-
     .hero {
         padding: 80px 0;
         text-align: center;
     }
-
     .hero-video {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
-
     .hero::after {
         background: rgba(0, 0, 0, 0.6); 
     }
-
     .hero img {
         width: 120px;
         height: 120px;
     }
-
     @keyframes float {
         0%, 100% {
             transform: translateY(0);
@@ -562,21 +539,17 @@ footer p {
         font-size: 28px;
         margin-top: 15px;
     }
-
     .hero p {
         font-size: 1.2rem; 
         padding: 0 15px; 
     }
-
     .social-icons a {
         margin: 0 10px; 
         font-size: 1.5rem; 
     }
-
     .social-icons a:hover {
         transform: scale(1.1); 
     }
-
     .download {
         font-size: 13px !important; 
         padding: 10px 20px; 
@@ -589,12 +562,10 @@ footer p {
         font-size: 14px;
         padding: 10px 15px;
     }
-
     .about-section .about-text {
         font-size: 16px;
         line-height: 1.6;
     }
-
     .skills-section .row {
         flex-direction: column;
         align-items: center;
@@ -607,21 +578,17 @@ footer p {
         width: 36px;
         height: 36px;
     }
-
     .experience-section p {
         font-size: 14px;
         line-height: 1.5;
     }
-
     .gallery {
         flex-direction: column;
         margin-top: 2rem;
     }
-
     .gallery-link {
         margin: 2rem 0.5rem;
     }
-
     .project-img {
         width: 90%;
         height: auto;
@@ -631,20 +598,17 @@ footer p {
                     0.7rem 0.7rem 0.1rem #00fffb;
         transition: all 0.5s ease;
     }
-
     .project-title {
         font-size: 16px;
         top: 15px;
         left: 1rem;
         transition: width 1s ease;
     }
-
     .project-describ {
         font-size: 12px;
         bottom: 2rem;
         left: 0.5rem;
     }
-
     .gallery-link::before {
         top: 5vw;
         left: 80%;
@@ -652,7 +616,6 @@ footer p {
         height: 0;
         transition: height 0.4s ease;
     }
-
     .gallery-link::after {
         top: 25%;
         left: 0.5rem;
@@ -660,26 +623,21 @@ footer p {
         height: 0.1rem;
         transition: width 0.4s ease;
     }
-
     .gallery-link:hover::before {
         height: 70%;
     }
-
     .gallery-link:hover::after {
         width: 85%;
     }
-
     .gallery-link:hover .project-title {
         width: 90%;
         transition: width 1s 0.3s;
     }
-
     .gallery-link:hover .project-describ {
         opacity: 1;
         visibility: visible;
         transition: opacity 0.8s ease;
     }
-
     .gallery-link:hover .project-img {
         box-shadow: 0.5rem 0.5rem 0.1rem #e92929, 
                     1rem 1rem 0.1rem #a2e946,
@@ -689,31 +647,26 @@ footer p {
         opacity: 0.6;
         transform: scale(1.03);
     }
-    
     #contact {
         padding: 80px 0;
         text-align: center;
     }
-
     .contact-video {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
-    
-      .contact-section {
+    .contact-section {
         padding: 40px 10px; 
-      }
-    
-      .contact-text {
+    }
+    .contact-text {
         font-size: 1rem; 
         line-height: 1.6; 
         padding: 0 10px; 
-      }
-    
-      .contact-container {
-        width: 80%; 
-        max-width: 300px; 
+    }
+    .contact-container {
+        width: 90%; 
+        max-width: 320px; 
         padding: 15px; 
         top: auto;
         right: auto; 
@@ -723,45 +676,37 @@ footer p {
         backdrop-filter: blur(5px); 
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
         opacity: 1; 
-      }
-    
-      .contact-container:hover {
+    }
+    .contact-container:hover {
         transform: translateX(-50%) scale(1.02); 
-      }
-    
-      h2 {
+    }
+    h2 {
         font-size: 1.5rem; 
         margin-bottom: 15px; 
-      }
-    
-      label {
+    }
+    label {
         font-size: 0.9rem; 
-      }
-    
-      input, textarea {
+    }
+    input, textarea {
         padding: 8px; 
         font-size: 1rem; 
-      }
-    
-      input:focus, textarea:focus {
+    }
+    input:focus, textarea:focus {
         box-shadow: 0 0 5px #00fffb !important; 
-      }
-    
-      .btn-success {
+    }
+    .btn-success {
         font-size: 14px; 
         padding: 8px;
         margin-top: 8px; 
         width: 90%; 
         box-shadow: 0 2px 5px rgba(52, 240, 227, 0.6); 
-      }
-    
-      .btn-success:hover {
+    }
+    .btn-success:hover {
         background: #00cfc7; 
-      }
+    }
     footer p {
         font-size: 12px;
     }
-
     .social-icons a:hover {
         color: #fff
                transforms scale(1.1);
