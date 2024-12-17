@@ -6,7 +6,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
 .navbar {
     position: sticky;
     top: 0;
@@ -14,16 +13,13 @@ body {
     background-color: #0f0f0f;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
-
 .navbar-brand, .nav-link {
     color: #00fffb !important;
     transition: color 0.3s ease-in-out;
 }
-
 .navbar-brand:hover, .nav-link:hover {
     color: #00fffb !important;
 }
-
 .navbar-nav .nav-item {
     margin: 0 10px;
 }
@@ -31,17 +27,13 @@ body {
     box-shadow: 0 4px 10px rgba(52, 240, 227, 0.8);
     border-radius: 5px;
 }
-
-/* Toggler Button */
 .navbar-toggler {
     border: none;
     background-color: #00fffb;
 }
-
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%280,255,251,1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
-
 .hero {
     background: url('7021905_Cyber_Data_3840x2160.mp4') center/cover no-repeat;
     padding: 120px 0;
@@ -791,7 +783,8 @@ footer ,#name {
 }
 .hero-video {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
 }
 .hero::after {
     background: rgba(0, 0, 0, 0.7);
@@ -861,7 +854,7 @@ footer ,#name {
 }
 .project-title {
     font-size: 1rem;
-    top: 10px;
+    top: 15px;
 }
 .project-describ {
     font-size: 0.8rem;
