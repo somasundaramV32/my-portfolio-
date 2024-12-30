@@ -36,7 +36,7 @@ body {
 }
 .hero {
     background: url('7021905_Cyber_Data_3840x2160.mp4') center/cover no-repeat;
-    padding: 120px 0;
+    padding: 150px 0;
     text-align: center;
     position: relative;
     animation: fadeIn 2s ease-in-out;
@@ -540,7 +540,7 @@ footer, #name{
     padding: 10px;
 }
 .hero {
-    padding: 80px 0;
+    padding: 150px 0;
     text-align: center;
 }
 .hero-video {
@@ -901,16 +901,4 @@ input, textarea {
 footer p {
     font-size: 0.8rem;
 }
-}
-
-
-
-
-
-
-
-
-
-
-
-
+} 
