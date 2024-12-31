@@ -168,7 +168,7 @@ body {
     text-align: center;
     margin-bottom: 20px;
     position: relative;
-    padding: 200px 0;
+    padding: 130px 0;
 }
 .section-skills::after {
     content: '';
@@ -222,6 +222,7 @@ body {
     color: #00fffb;
     margin-bottom: 20px;  
     position: relative;  
+    padding: 150px 0px ;
 }
 .section-experience::after {
     content: '';
@@ -233,7 +234,7 @@ body {
     box-shadow: 0 4px 10px rgba(52, 240, 227, 0.8); 
 } 
 .experience-section{
-    padding: 60 px 0;
+    padding: 80 px 0;
     color: #cecdc9;
     background-color: #070707; 
     margin: 10px auto 0;
@@ -278,6 +279,10 @@ body {
     background: gray;
     margin: 10px auto 0;
     box-shadow: 0 4px 10px rgba(52, 240, 227, 0.8);
+}
+.project-section{
+    padding: 150 px 0;
+
 }
 #project{
     padding: 60 px 0;
@@ -409,7 +414,7 @@ body {
 }
 #contact {
     background: url('7021905_Cyber_Data_3840x2160.mp4') center/cover no-repeat;
-    padding: 120px 0;
+    padding: 100px 0;
     text-align: center;
     position: relative;
     animation: fadeIn 2s ease-in-out;
@@ -542,7 +547,7 @@ footer, #name{
     padding: 10px;
 }
 .hero {
-    padding: 250px 0;
+    padding: 150px 0;
     text-align: center;
 }
 .hero-video {
@@ -618,6 +623,9 @@ footer, #name{
 .gallery-link {
     margin: 2rem 0.5rem;
 }
+#project {
+    padding: 180px 0;
+}
 .project-img {
     width: 90%;
     height: auto;
@@ -677,7 +685,7 @@ footer, #name{
     transform: scale(1.03);
 }
 #contact {
-    padding: 80px 0;
+    padding: 100px 0;
     text-align: center;
 }
 .contact-video {
