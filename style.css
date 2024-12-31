@@ -547,13 +547,14 @@ footer, #name{
     padding: 10px;
 }
 .hero {
-    padding: 195px 0;
+    padding: 190px 0;
     text-align: center;
 }
 .hero-video {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    
 }
 .hero::after {
     background: rgba(0, 0, 0, 0.6); 
